@@ -1,0 +1,17 @@
+To use this program you must have uvccapture installed. I found it
+through apt. I don't know much about it, but it worked out of the box
+for me. No setup required.
+
+This program is designed to run in the background and take pictures
+with a webcam when someone starts typing. The idea is that if someone
+wonders over to your computer and starts typing things, you'll have a
+picture of them. Odds are you'll wind up with a lot of pictures of
+yourself.
+
+The time interval is defined in the bottom of the for loop in
+seconds. I have it set to 10 minutes (600 seconds) for now, I might
+raise that if it tries to gobble up disk space too fast.
+
+As an added bonus, the images get chmod 400. That makes it slightly
+harder to accidentally delete the images, and if you're on a
+multi-user system, it increases privacy a little.
